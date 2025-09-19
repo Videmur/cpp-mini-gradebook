@@ -1,8 +1,3 @@
-/*
-Damian Campbell
-CSC-121
-9/19/2025
-*/
 #include <iostream>
 #include <iomanip>
 #include <cmath>
