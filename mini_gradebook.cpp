@@ -35,7 +35,8 @@ void get_student_roster_stats(vector<Student> student_vector)
     cout << BAR << endl; //Seperating output
     
     string pass_or_fail;
-    for (Student student : student_vector)
+
+    for(Student student : student_vector)
     {
         //The following if statement decides whether a student has passed or failed based on the "FAIL_THRESHOLD" constant
         if (student.grade <= FAIL_THRESHOLD)
@@ -47,10 +48,6 @@ void get_student_roster_stats(vector<Student> student_vector)
             pass_or_fail = "Pass";
         }
         cout << "Name: " << student.name << "\tGrade: " << student.grade << "\t" << pass_or_fail << endl;
-    }
-
-    for(Student student : student_vector)
-    {
         total_grade += student.grade;
 
         if (student.grade > highest_grade_student.grade) //Changes student with highest score if the current student's score is higher
